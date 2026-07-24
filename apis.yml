@@ -1,8 +1,27 @@
 aid: choicevendor
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/choicevendor.png
 name: ChoiceVendor
-description: ChoiceVendor is a company surfaced as a portfolio company of battery-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: ChoiceVendor is a company surfaced as a portfolio company of battery-ventures and added
+  to the API Evangelist network as a stub for enrichment. An enrichment pass on 2026-07-20 found no
+  live company surface to harvest - the choicevendor.com domain is still registered and delegated to
+  Cloudflare name servers (autumn.ns.cloudflare.com, sevki.ns.cloudflare.com) but publishes no A
+  record and no MX record, so no website, developer portal, documentation, or API host resolves.
+  HTTPS requests to choicevendor.com and www.choicevendor.com fail to connect (curl exit 6, DNS
+  resolution failure). Domain-security and security-program probes both returned no hosts and no
+  vulnerability-disclosure or trust-center surface. There is no OpenAPI, no SDK, and no event
+  surface to enrich, and no artifacts were fabricated. This profile remains a dormant portfolio lead
+  and should be re-probed only if the domain is brought back online.
 url: https://raw.githubusercontent.com/api-evangelist/choicevendor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +29,26 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: no-live-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Portfolio
+- Venture Backed
+- Battery Ventures
+- Stub
+- Dormant
+- No API Surface
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
